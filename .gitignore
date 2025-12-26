@@ -1,0 +1,33 @@
+# 创建 .gitignore 文件
+cat > .gitignore << EOF
+# Build outputs
+out/
+cache/
+
+# Dependencies
+lib/
+
+# Environment
+.env
+
+# Coverage
+coverage/
+coverage.json
+
+# Foundry
+**/broadcast
+**/cache
+**/out
+**/lib
+**/remappings.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+EOF
